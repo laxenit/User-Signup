@@ -1,0 +1,31 @@
+
+<style>
+    .error {color:red;}
+br {
+    margin-bottom: 40px;
+  }
+</style>
+       <h1>Signup</h1>
+        <form action='/sign-up' method = 'POST'>
+            <label>Username: 
+                <input id="user-name" name="user-name" type = "text" value =' ' title ="Username may not contain spaces."minlength="3" maxlength="20" pattern="^[A-Za-z][A-Za-z0-9]*$" required/>
+            </label>
+            <br>
+            
+            <label>Password
+                <input  type="password"  title ="Password may not contain any spaces." minlength="3" maxlength="20" required pattern="^[A-Za-z][A-Za-z0-9!@#$%&?]*$" name="pwd1"/>
+            </label>
+            <br>
+            <label>Verify Password:
+                <input  type="password" required title ="Password may not contain any spaces." minlength="3" maxlength="20" pattern="^[A-Za-z][A-Za-z0-9!@#$%&?]*$" name="pwd2"/>
+            </label>
+            
+          
+            <label>Email (optional)
+                <input  name="user-email" type="text" value=' ' minlength="5 " maxlength="20" pattern="^[A-Za-z][A-Za-z0-9]*$" /> 
+            </label>
+            
+            <br>
+
+            <input type="submit" value ="Submit"/>
+        </form>
